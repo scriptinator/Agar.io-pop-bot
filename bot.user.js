@@ -1141,7 +1141,7 @@ function PopBot() {
 
             if (virusDistance < playerCell.size + this.splitDistance / 2 && playerCell.size - disguiseVirus.size > this.disguiseMaxSize) {
                 console.log("We're too big for this virus - shooting some mass");
-                setTimeout(shoot, 80);
+                setTimeout(eject, 80);
                 // While shooting, jiggle towards an angle perpendicular to the angle
                 // of the virus, so we avoid shooting it and making it bigger by accident
                 var shiftedAngle = this.getAngle(playerCell.x, playerCell.y, disguiseVirus.x, disguiseVirus.y) + 90 + 180 * (Math.random() > 0.5 ? 1 : 0);
